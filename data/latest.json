@@ -1,0 +1,149 @@
+{
+  "date": "2026-07-15",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 12915,
+      "by_category": {
+        "accounting-finance-jobs": 491,
+        "it-jobs": 997,
+        "sales-jobs": 615,
+        "customer-services-jobs": 123,
+        "engineering-jobs": 1674,
+        "hr-jobs": 110,
+        "healthcare-nursing-jobs": 457,
+        "hospitality-catering-jobs": 628,
+        "pr-advertising-marketing-jobs": 85,
+        "logistics-warehouse-jobs": 846,
+        "teaching-jobs": 3234,
+        "trade-construction-jobs": 901,
+        "admin-jobs": 251,
+        "legal-jobs": 181,
+        "creative-design-jobs": 43,
+        "graduate-jobs": 124,
+        "retail-jobs": 193,
+        "consultancy-jobs": 167,
+        "manufacturing-jobs": 88,
+        "scientific-qa-jobs": 42,
+        "social-work-jobs": 274,
+        "travel-jobs": 289,
+        "energy-oil-gas-jobs": 20,
+        "property-jobs": 51,
+        "charity-voluntary-jobs": 10,
+        "domestic-help-cleaning-jobs": 334,
+        "maintenance-jobs": 75,
+        "part-time-jobs": 600,
+        "other-general-jobs": 12,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "40000": 1242,
+        "70000": 649,
+        "60000": 449,
+        "10000": 147,
+        "20000": 1861,
+        "50000": 603,
+        "30000": 2000
+      },
+      "top_companies": [
+        {
+          "count": 133,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM"
+        },
+        {
+          "count": 108,
+          "canonical_name": "Appen",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 79,
+          "canonical_name": "Stantec",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Graphcore",
+          "count": 65
+        },
+        {
+          "count": 60,
+          "canonical_name": "Vets for Pets",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 69691,
+      "by_category": {
+        "accounting-finance-jobs": 1968,
+        "it-jobs": 2405,
+        "sales-jobs": 2467,
+        "customer-services-jobs": 666,
+        "engineering-jobs": 5990,
+        "hr-jobs": 491,
+        "healthcare-nursing-jobs": 2763,
+        "hospitality-catering-jobs": 4372,
+        "pr-advertising-marketing-jobs": 323,
+        "logistics-warehouse-jobs": 3379,
+        "teaching-jobs": 16143,
+        "trade-construction-jobs": 5904,
+        "admin-jobs": 1168,
+        "legal-jobs": 740,
+        "creative-design-jobs": 110,
+        "graduate-jobs": 347,
+        "retail-jobs": 1296,
+        "consultancy-jobs": 425,
+        "manufacturing-jobs": 1022,
+        "scientific-qa-jobs": 212,
+        "social-work-jobs": 2580,
+        "travel-jobs": 5960,
+        "energy-oil-gas-jobs": 93,
+        "property-jobs": 220,
+        "charity-voluntary-jobs": 54,
+        "domestic-help-cleaning-jobs": 2658,
+        "maintenance-jobs": 455,
+        "part-time-jobs": 5437,
+        "other-general-jobs": 43,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "30000": 9820,
+        "40000": 4869,
+        "50000": 2683,
+        "60000": 1677,
+        "10000": 810,
+        "20000": 9357,
+        "70000": 2223
+      },
+      "top_companies": [
+        {
+          "count": 320,
+          "canonical_name": "Vets for Pets",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 316,
+          "canonical_name": "Whitbread",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "RAC",
+          "count": 248
+        },
+        {
+          "count": 236,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Compass Group"
+        },
+        {
+          "count": 207,
+          "canonical_name": "My Four Wheels",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        }
+      ]
+    }
+  }
+}
