@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Bristol &amp; South West Job Market — Live</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;700&family=IBM+Plex+Mono:wght@400;500;600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/4.4.4/chart.umd.min.js"></script>
+<style>
+  :root{
+    --navy: #0B1E3C;
+    --navy-deep: #071224;
+    --gold: #C9972E;
+    --paper: #FAF8F3;
+    --ink: #1C2733;
+    --slate: #6B7A8F;
+    --line: #E6E1D6;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:'Inter', system-ui, sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  h1,h2,h3,.display{
+    font-family:'Space Grotesk', sans-serif;
+    letter-spacing:-0.01em;
+  }
+  .mono{ font-family:'IBM Plex Mono', monospace; }
+
+  header{
+    background: linear-gradient(160deg, var(--navy) 0%, var(--navy-deep) 100%);
+    color:var(--paper);
+    padding: 18px 28px;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  header .brand{
+    display:flex;
+    align-items:baseline;
+    gap:10px;
+  }
+  header .brand .name{
+    font-family:'Space Grotesk', sans-serif;
+    font-weight:700;
+    font-size:1.05rem;
+    letter-spacing:0.02em;
+  }
+  header .brand .tag{
+    color:var(--gold);
+    font-size:0.75rem;
+    font-family:'IBM Plex Mono', monospace;
+    letter-spacing:0.06em;
+  }
+  header .made-by{
+    font-size:0.75rem;
+    color:#9FB0C8;
+    font-family:'IBM Plex Mono', monospace;
+  }
+  header .made-by a{ color:var(--gold); text-decoration:none; }
+
+  .hero{
+    background: radial-gradient(ellipse at 20% 0%, #142c52 0%, var(--navy-deep) 60%);
+    color:var(--paper);
+    padding: 56px 28px 40px;
+    text-align:center;
+  }
+  .live-dot{
+    display:inline-block;
+    width:9px;height:9px;
+    border-radius:50%;
+    background:var(--gold);
+    margin-right:8px;
+    animation: pulse 2s infinite;
+    vertical-align:middle;
+  }
+  @media (prefers-reduced-motion: reduce){ .live-dot{ animation:none; } }
+  @keyframes pulse{
+    0%{ box-shadow:0 0 0 0 rgba(201,151,46,0.55); }
+    70%{ box-shadow:0 0 0 10px rgba(201,151,46,0); }
+    100%{ box-shadow:0 0 0 0 rgba(201,151,46,0); }
+  }
+  .hero .eyebrow{
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.8rem;
+    letter-spacing:0.12em;
+    text-transform:uppercase;
+    color:#B9C6DA;
+  }
+  .hero .bignum{
+    font-family:'IBM Plex Mono', monospace;
+    font-weight:600;
+    font-size:clamp(3rem, 11vw, 6rem);
+    color:var(--paper);
+    line-height:1;
+    margin: 10px 0 6px;
+  }
+  .hero .bignum .gold{ color:var(--gold); }
+  .hero .sub{
+    color:#C7D2E3;
+    font-size:1rem;
+    max-width:520px;
+    margin:0 auto;
+  }
+  .hero .updated{
+    margin-top:22px;
+    font-family:'IBM Plex Mono', monospace;
+    font-size:0.75rem;
+    color:#7D8FAC;
+  }
+
+  .stat-row{
+    display:flex;
+    gap:16px;
+    justify-content:center;
+    flex-wrap:wrap;
+    margin-top:28px;
+  }
+  .chip{
+    background:rgba(255,255,255,0.05);
+    border:1px solid rgba(255,255,255,0.12);
+    border-radius:10px;
+    padding:12px 20px;
+    min-width:140px;
+  }
+  .chip .k{ font-family:'IBM Plex Mono', monospace; font-size:1.4rem; color:var(--gold); }
+  .chip .l{ font-size:0.72rem; color:#B9C6DA; text-transform:uppercase; letter-spacing:0.06em; margin-top:2px; }
+
+  main{
+    max-width:1080px;
+    margin: 0 auto;
+    padding: 36px 24px 80px;
+    display:grid;
+    grid-template-columns: 1.3fr 1fr;
+    gap:22px;
+  }
+  @media (max-width: 860px){
+    main{ grid-template-columns: 1fr; }
+  }
+  .card{
+    background:#fff;
+    border:1px solid var(--line);
+    border-radius:14px;
+    padding:22px 22px 14px;
+  }
+  .card.full{ grid-column: 1 / -1; }
+  .card h3{
+    margin:0 0 4px;
+    font-size:1rem;
+  }
+  .card .desc{
+    color:var(--slate);
+    font-size:0.82rem;
+    margin-bottom:14px;
+  }
+  .chart-wrap{ position:relative; height:320px; }
+  .chart-wrap.short{ height:230px; }
+
+  table{ width:100%; border-collapse:collapse; font-size:0.88rem; }
+  table th{
+    text-align:left;
+    color:var(--slate);
+    font-weight:500;
+    font-size:0.72rem;
+    text-transform:uppercase;
+    letter-spacing:0.05em;
+    padding-bottom:8px;
+    border-bottom:1px solid var(--line);
+  }
+  table td{
+    padding:9px 0;
+    border-bottom:1px solid var(--line);
+  }
+  table td.num{ font-family:'IBM Plex Mono', monospace; text-align:right; color:var(--navy); }
+
+  .banner{
+    max-width:1080px;
+    margin: 18px auto 0;
+    padding: 10px 24px;
+  }
+  .banner .box{
+    background:#FFF6E5;
+    border:1px solid #EAD9A8;
+    color:#7A5B10;
+    border-radius:10px;
+    padding:10px 16px;
+    font-size:0.82rem;
+    font-family:'IBM Plex Mono', monospace;
+  }
+
+  footer{
+    text-align:center;
+    color:var(--slate);
+    font-size:0.78rem;
+    padding: 10px 24px 50px;
+  }
+  footer a{ color:var(--navy); }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">
+    <span class="name">Bristol Job Market</span>
+    <span class="tag">// LIVE TRACKER</span>
+  </div>
+  <div class="made-by">built by <a href="https://plain-data.co.uk" target="_blank" rel="noopener">Plain Data</a></div>
+</header>
+
+<div class="hero">
+  <div class="eyebrow"><span class="live-dot"></span>Bristol &amp; South West England</div>
+  <div class="bignum"><span id="heroCount">—</span></div>
+  <div class="sub">live job vacancies advertised right now, tracked daily and broken down by sector, salary and who's hiring</div>
+  <div class="stat-row">
+    <div class="chip"><div class="k mono" id="chipBristol">—</div><div class="l">Bristol</div></div>
+    <div class="chip"><div class="k mono" id="chipSW">—</div><div class="l">South West</div></div>
+    <div class="chip"><div class="k mono" id="chipTopCat">—</div><div class="l">top sector</div></div>
+  </div>
+  <div class="updated" id="updatedLine">last updated —</div>
+</div>
+
+<div class="banner" id="sampleBanner" style="display:none;">
+  <div class="box">Showing sample data — this preview isn't connected to a live feed yet. See README.md to hook up your Adzuna API keys.</div>
+</div>
+
+<main>
+  <div class="card full">
+    <h3>Vacancies by sector</h3>
+    <div class="desc">Bristol, all categories, sorted by current vacancy count</div>
+    <div class="chart-wrap"><canvas id="categoryChart"></canvas></div>
+  </div>
+
+  <div class="card">
+    <h3>Salary distribution</h3>
+    <div class="desc">Advertised salary bands, Bristol</div>
+    <div class="chart-wrap short"><canvas id="salaryChart"></canvas></div>
+  </div>
+
+  <div class="card">
+    <h3>Top hiring companies</h3>
+    <div class="desc">Most active employers right now, Bristol</div>
+    <table>
+      <thead><tr><th>Company</th><th style="text-align:right;">Open roles</th></tr></thead>
+      <tbody id="companyTable"></tbody>
+    </table>
+  </div>
+
+  <div class="card full">
+    <h3>Trend over time</h3>
+    <div class="desc">Total live vacancies, tracked daily since the tracker started running</div>
+    <div class="chart-wrap"><canvas id="trendChart"></canvas></div>
+  </div>
+</main>
+
+<footer>
+  Data via <a href="https://developer.adzuna.com/" target="_blank" rel="noopener">Adzuna</a>. Personal project, not affiliated with Adzuna. Updated daily via GitHub Actions.
+</footer>
+
+<script>
+// ---- Sample data, used only as a fallback when data/latest.json can't be loaded ----
+const SAMPLE = {
+  date: "2026-07-14",
+  locations: {
+    "Bristol": {
+      total_vacancies: 4830,
+      by_category: {
+        "IT Jobs": 812, "Accounting & Finance Jobs": 640, "Engineering Jobs": 588,
+        "Healthcare & Nursing Jobs": 511, "Sales Jobs": 430, "Trade & Construction Jobs": 372,
+        "Teaching Jobs": 298, "Admin Jobs": 275, "Retail Jobs": 240, "Hospitality & Catering Jobs": 210
+      },
+      salary_histogram: { "20000": 180, "25000": 420, "30000": 690, "35000": 810, "40000": 720, "50000": 610, "60000": 380, "80000": 210, "100000": 90 },
+      top_companies: [
+        {canonical_name:"NHS", count: 210}, {canonical_name:"Airbus", count: 140},
+        {canonical_name:"Hargreaves Lansdown", count: 96}, {canonical_name:"Lloyds Banking Group", count: 88},
+        {canonical_name:"University of Bristol", count: 74}, {canonical_name:"Bristol City Council", count: 61}
+      ]
+    },
+    "South West": { total_vacancies: 21400 }
+  }
+};
+
+const money = n => n >= 1000 ? (n/1000).toFixed(1).replace(/\.0$/,'') + 'k' : n;
+
+async function loadData(){
+  try{
+    const res = await fetch('./data/latest.json', {cache:'no-store'});
+    if(!res.ok) throw new Error('no data file yet');
+    return {data: await res.json(), sample:false};
+  }catch(e){
+    return {data: SAMPLE, sample:true};
+  }
+}
+
+async function loadHistory(){
+  try{
+    const res = await fetch('./data/history.csv', {cache:'no-store'});
+    if(!res.ok) throw new Error('no history yet');
+    const text = await res.text();
+    const rows = text.trim().split('\n').slice(1).map(r => r.split(','));
+    return rows;
+  }catch(e){
+    // small sample trend so the chart isn't empty on first preview
+    const days = 10, out = [];
+    let base = 4550;
+    for(let i=days-1;i>=0;i--){
+      const d = new Date(); d.setDate(d.getDate()-i);
+      base += Math.round((Math.random()-0.3)*40);
+      out.push([d.toISOString().slice(0,10), "Bristol", base]);
+    }
+    return out;
+  }
+}
+
+const navy = '#0B1E3C', gold = '#C9972E', slate = '#6B7A8F', line = '#E6E1D6';
+
+Chart.defaults.font.family = "'Inter', sans-serif";
+Chart.defaults.color = slate;
+
+function renderCategoryChart(byCategory){
+  const entries = Object.entries(byCategory || {}).sort((a,b)=>b[1]-a[1]).slice(0,10);
+  new Chart(document.getElementById('categoryChart'), {
+    type:'bar',
+    data:{
+      labels: entries.map(e=>e[0].replace(' Jobs','')),
+      datasets:[{ data: entries.map(e=>e[1]), backgroundColor: gold, borderRadius:4, barThickness:16 }]
+    },
+    options:{
+      indexAxis:'y',
+      plugins:{ legend:{display:false} },
+      scales:{
+        x:{ grid:{color:line}, ticks:{color:slate} },
+        y:{ grid:{display:false}, ticks:{color:navy, font:{weight:500}} }
+      }
+    }
+  });
+}
+
+function renderSalaryChart(hist){
+  const entries = Object.entries(hist || {}).sort((a,b)=>Number(a[0])-Number(b[0]));
+  new Chart(document.getElementById('salaryChart'), {
+    type:'bar',
+    data:{
+      labels: entries.map(e=>'£'+money(Number(e[0]))),
+      datasets:[{ data: entries.map(e=>e[1]), backgroundColor: navy, borderRadius:4 }]
+    },
+    options:{
+      plugins:{ legend:{display:false} },
+      scales:{
+        x:{ grid:{display:false}, ticks:{color:slate, font:{size:10}} },
+        y:{ grid:{color:line} }
+      }
+    }
+  });
+}
+
+function renderTrendChart(rows){
+  const bristolRows = rows.filter(r => r[1] === 'Bristol');
+  new Chart(document.getElementById('trendChart'), {
+    type:'line',
+    data:{
+      labels: bristolRows.map(r=>r[0]),
+      datasets:[{
+        data: bristolRows.map(r=>Number(r[2])),
+        borderColor: navy, backgroundColor: 'rgba(11,30,60,0.06)',
+        pointBackgroundColor: gold, pointBorderColor: gold, pointRadius:4,
+        fill:true, tension:0.3
+      }]
+    },
+    options:{
+      plugins:{ legend:{display:false} },
+      scales:{
+        x:{ grid:{display:false} },
+        y:{ grid:{color:line} }
+      }
+    }
+  });
+}
+
+function renderCompanyTable(companies){
+  const tbody = document.getElementById('companyTable');
+  (companies || []).slice(0,8).forEach(c=>{
+    const tr = document.createElement('tr');
+    tr.innerHTML = `<td>${c.canonical_name || c.name || '—'}</td><td class="num">${c.count ?? '—'}</td>`;
+    tbody.appendChild(tr);
+  });
+}
+
+(async function init(){
+  const {data, sample} = await loadData();
+  const history = await loadHistory();
+
+  if(sample) document.getElementById('sampleBanner').style.display = 'block';
+
+  const bristol = data.locations?.["Bristol"] || {};
+  const sw = data.locations?.["South West"] || {};
+
+  document.getElementById('heroCount').innerHTML =
+    (bristol.total_vacancies ?? '—').toLocaleString();
+  document.getElementById('chipBristol').textContent = (bristol.total_vacancies ?? '—').toLocaleString();
+  document.getElementById('chipSW').textContent = (sw.total_vacancies ?? '—').toLocaleString();
+
+  const topCat = Object.entries(bristol.by_category || {}).sort((a,b)=>b[1]-a[1])[0];
+  document.getElementById('chipTopCat').textContent = topCat ? topCat[0].replace(' Jobs','') : '—';
+
+  document.getElementById('updatedLine').textContent = `last updated ${data.date || '—'}`;
+
+  renderCategoryChart(bristol.by_category);
+  renderSalaryChart(bristol.salary_histogram);
+  renderCompanyTable(bristol.top_companies);
+  renderTrendChart(history);
+})();
+</script>
+
+</body>
+</html>
