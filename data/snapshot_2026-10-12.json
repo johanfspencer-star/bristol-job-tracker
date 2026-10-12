@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-12",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 9996,
+      "by_category": {
+        "accounting-finance-jobs": 277,
+        "it-jobs": 828,
+        "sales-jobs": 554,
+        "customer-services-jobs": 150,
+        "engineering-jobs": 1747,
+        "hr-jobs": 90,
+        "healthcare-nursing-jobs": 564,
+        "hospitality-catering-jobs": 618,
+        "pr-advertising-marketing-jobs": 60,
+        "logistics-warehouse-jobs": 817,
+        "teaching-jobs": 715,
+        "trade-construction-jobs": 905,
+        "admin-jobs": 233,
+        "legal-jobs": 177,
+        "creative-design-jobs": 27,
+        "graduate-jobs": 155,
+        "retail-jobs": 254,
+        "consultancy-jobs": 182,
+        "manufacturing-jobs": 100,
+        "scientific-qa-jobs": 49,
+        "social-work-jobs": 285,
+        "travel-jobs": 300,
+        "energy-oil-gas-jobs": 24,
+        "property-jobs": 36,
+        "charity-voluntary-jobs": 10,
+        "domestic-help-cleaning-jobs": 604,
+        "maintenance-jobs": 81,
+        "part-time-jobs": 146,
+        "other-general-jobs": 8,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "30000": 1950,
+        "50000": 612,
+        "10000": 121,
+        "60000": 421,
+        "40000": 1083,
+        "20000": 1532,
+        "70000": 649
+      },
+      "top_companies": [
+        {
+          "count": 156,
+          "canonical_name": "AECOM",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 108,
+          "canonical_name": "Appen"
+        },
+        {
+          "canonical_name": "Stantec",
+          "count": 105,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "canonical_name": "Rolls-Royce",
+          "count": 82,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 50,
+          "canonical_name": "Graphcore",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 55562,
+      "by_category": {
+        "accounting-finance-jobs": 1102,
+        "it-jobs": 2378,
+        "sales-jobs": 2249,
+        "customer-services-jobs": 728,
+        "engineering-jobs": 6655,
+        "hr-jobs": 338,
+        "healthcare-nursing-jobs": 3027,
+        "hospitality-catering-jobs": 4110,
+        "pr-advertising-marketing-jobs": 213,
+        "logistics-warehouse-jobs": 3409,
+        "teaching-jobs": 3739,
+        "trade-construction-jobs": 5774,
+        "admin-jobs": 1002,
+        "legal-jobs": 660,
+        "creative-design-jobs": 133,
+        "graduate-jobs": 419,
+        "retail-jobs": 1467,
+        "consultancy-jobs": 379,
+        "manufacturing-jobs": 1124,
+        "scientific-qa-jobs": 263,
+        "social-work-jobs": 2635,
+        "travel-jobs": 5909,
+        "energy-oil-gas-jobs": 92,
+        "property-jobs": 176,
+        "charity-voluntary-jobs": 46,
+        "domestic-help-cleaning-jobs": 5240,
+        "maintenance-jobs": 411,
+        "part-time-jobs": 1863,
+        "other-general-jobs": 21,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "70000": 2258,
+        "50000": 2638,
+        "30000": 11678,
+        "20000": 8807,
+        "10000": 985,
+        "40000": 4608,
+        "60000": 1540
+      },
+      "top_companies": [
+        {
+          "count": 240,
+          "canonical_name": "Tesco",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM",
+          "count": 236
+        },
+        {
+          "canonical_name": "Stantec",
+          "count": 227,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "canonical_name": "Amazon Flex",
+          "count": 189,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 177,
+          "canonical_name": "Dorset County Council",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        }
+      ]
+    }
+  }
+}
