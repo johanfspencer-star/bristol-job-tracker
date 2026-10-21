@@ -1,0 +1,149 @@
+{
+  "date": "2026-10-21",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 10241,
+      "by_category": {
+        "accounting-finance-jobs": 300,
+        "it-jobs": 984,
+        "sales-jobs": 564,
+        "customer-services-jobs": 150,
+        "engineering-jobs": 1738,
+        "hr-jobs": 95,
+        "healthcare-nursing-jobs": 730,
+        "hospitality-catering-jobs": 551,
+        "pr-advertising-marketing-jobs": 78,
+        "logistics-warehouse-jobs": 835,
+        "teaching-jobs": 680,
+        "trade-construction-jobs": 918,
+        "admin-jobs": 272,
+        "legal-jobs": 195,
+        "creative-design-jobs": 30,
+        "graduate-jobs": 157,
+        "retail-jobs": 244,
+        "consultancy-jobs": 196,
+        "manufacturing-jobs": 104,
+        "scientific-qa-jobs": 62,
+        "social-work-jobs": 269,
+        "travel-jobs": 288,
+        "energy-oil-gas-jobs": 23,
+        "property-jobs": 34,
+        "charity-voluntary-jobs": 12,
+        "domestic-help-cleaning-jobs": 492,
+        "maintenance-jobs": 72,
+        "part-time-jobs": 159,
+        "other-general-jobs": 9,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "60000": 451,
+        "30000": 1828,
+        "70000": 730,
+        "40000": 1072,
+        "20000": 1559,
+        "10000": 89,
+        "50000": 687
+      },
+      "top_companies": [
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 130,
+          "canonical_name": "AECOM"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 129,
+          "canonical_name": "University Hospitals Bristol NHS Foundation Trust"
+        },
+        {
+          "canonical_name": "Appen",
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 108
+        },
+        {
+          "canonical_name": "Stantec",
+          "count": 102,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 63,
+          "canonical_name": "Rolls-Royce"
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 55942,
+      "by_category": {
+        "accounting-finance-jobs": 1157,
+        "it-jobs": 2899,
+        "sales-jobs": 2243,
+        "customer-services-jobs": 739,
+        "engineering-jobs": 6747,
+        "hr-jobs": 393,
+        "healthcare-nursing-jobs": 4048,
+        "hospitality-catering-jobs": 3413,
+        "pr-advertising-marketing-jobs": 262,
+        "logistics-warehouse-jobs": 3374,
+        "teaching-jobs": 3714,
+        "trade-construction-jobs": 5759,
+        "admin-jobs": 1210,
+        "legal-jobs": 670,
+        "creative-design-jobs": 97,
+        "graduate-jobs": 437,
+        "retail-jobs": 1496,
+        "consultancy-jobs": 375,
+        "manufacturing-jobs": 1103,
+        "scientific-qa-jobs": 306,
+        "social-work-jobs": 2734,
+        "travel-jobs": 5890,
+        "energy-oil-gas-jobs": 92,
+        "property-jobs": 174,
+        "charity-voluntary-jobs": 43,
+        "domestic-help-cleaning-jobs": 4217,
+        "maintenance-jobs": 391,
+        "part-time-jobs": 1937,
+        "other-general-jobs": 22,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "10000": 938,
+        "30000": 10525,
+        "20000": 8727,
+        "60000": 1734,
+        "70000": 2498,
+        "50000": 2813,
+        "40000": 4752
+      },
+      "top_companies": [
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "RAC",
+          "count": 266
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 222,
+          "canonical_name": "AECOM"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Stantec",
+          "count": 219
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Tesco",
+          "count": 197
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Whitbread",
+          "count": 176
+        }
+      ]
+    }
+  }
+}
