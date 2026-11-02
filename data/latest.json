@@ -1,54 +1,54 @@
 {
-  "date": "2026-11-01",
+  "date": "2026-11-02",
   "locations": {
     "Bristol": {
       "where": "Bristol",
-      "total_vacancies": 10029,
+      "total_vacancies": 9945,
       "by_category": {
-        "accounting-finance-jobs": 289,
-        "it-jobs": 930,
-        "sales-jobs": 538,
-        "customer-services-jobs": 152,
-        "engineering-jobs": 1692,
-        "hr-jobs": 90,
-        "healthcare-nursing-jobs": 786,
-        "hospitality-catering-jobs": 630,
-        "pr-advertising-marketing-jobs": 79,
-        "logistics-warehouse-jobs": 861,
-        "teaching-jobs": 660,
-        "trade-construction-jobs": 880,
-        "admin-jobs": 283,
-        "legal-jobs": 180,
-        "creative-design-jobs": 34,
-        "graduate-jobs": 185,
-        "retail-jobs": 259,
-        "consultancy-jobs": 211,
-        "manufacturing-jobs": 94,
-        "scientific-qa-jobs": 56,
-        "social-work-jobs": 253,
-        "travel-jobs": 283,
-        "energy-oil-gas-jobs": 28,
+        "accounting-finance-jobs": 288,
+        "it-jobs": 915,
+        "sales-jobs": 539,
+        "customer-services-jobs": 149,
+        "engineering-jobs": 1693,
+        "hr-jobs": 89,
+        "healthcare-nursing-jobs": 773,
+        "hospitality-catering-jobs": 623,
+        "pr-advertising-marketing-jobs": 80,
+        "logistics-warehouse-jobs": 864,
+        "teaching-jobs": 649,
+        "trade-construction-jobs": 873,
+        "admin-jobs": 275,
+        "legal-jobs": 183,
+        "creative-design-jobs": 33,
+        "graduate-jobs": 184,
+        "retail-jobs": 242,
+        "consultancy-jobs": 213,
+        "manufacturing-jobs": 93,
+        "scientific-qa-jobs": 55,
+        "social-work-jobs": 250,
+        "travel-jobs": 285,
+        "energy-oil-gas-jobs": 27,
         "property-jobs": 34,
         "charity-voluntary-jobs": 8,
-        "domestic-help-cleaning-jobs": 269,
-        "maintenance-jobs": 92,
+        "domestic-help-cleaning-jobs": 266,
+        "maintenance-jobs": 89,
         "part-time-jobs": 167,
         "other-general-jobs": 6,
         "unknown": 0
       },
       "salary_histogram": {
-        "50000": 732,
-        "70000": 676,
+        "70000": 674,
+        "20000": 1525,
+        "40000": 1034,
         "60000": 408,
-        "10000": 101,
-        "30000": 1584,
-        "20000": 1548,
-        "40000": 1034
+        "50000": 734,
+        "30000": 1561,
+        "10000": 98
       },
       "top_companies": [
         {
           "canonical_name": "University Hospitals Bristol NHS Foundation Trust",
-          "count": 161,
+          "count": 152,
           "__CLASS__": "Adzuna::API::Response::Company"
         },
         {
@@ -58,90 +58,90 @@
         },
         {
           "canonical_name": "Stantec",
-          "count": 109,
-          "__CLASS__": "Adzuna::API::Response::Company"
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 109
         },
         {
           "canonical_name": "Appen",
-          "count": 108,
-          "__CLASS__": "Adzuna::API::Response::Company"
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 108
         },
         {
           "__CLASS__": "Adzuna::API::Response::Company",
-          "canonical_name": "Rolls-Royce",
-          "count": 100
+          "count": 98,
+          "canonical_name": "Rolls-Royce"
         }
       ]
     },
     "South West": {
       "where": "South West England",
-      "total_vacancies": 53752,
+      "total_vacancies": 53086,
       "by_category": {
-        "accounting-finance-jobs": 1108,
-        "it-jobs": 2812,
-        "sales-jobs": 2175,
-        "customer-services-jobs": 777,
-        "engineering-jobs": 6503,
-        "hr-jobs": 349,
-        "healthcare-nursing-jobs": 4162,
-        "hospitality-catering-jobs": 4032,
-        "pr-advertising-marketing-jobs": 298,
-        "logistics-warehouse-jobs": 3235,
-        "teaching-jobs": 3646,
-        "trade-construction-jobs": 5627,
-        "admin-jobs": 1188,
-        "legal-jobs": 677,
-        "creative-design-jobs": 102,
-        "graduate-jobs": 436,
-        "retail-jobs": 1647,
+        "accounting-finance-jobs": 1104,
+        "it-jobs": 2516,
+        "sales-jobs": 2179,
+        "customer-services-jobs": 766,
+        "engineering-jobs": 6562,
+        "hr-jobs": 346,
+        "healthcare-nursing-jobs": 4119,
+        "hospitality-catering-jobs": 3985,
+        "pr-advertising-marketing-jobs": 296,
+        "logistics-warehouse-jobs": 3277,
+        "teaching-jobs": 3582,
+        "trade-construction-jobs": 5607,
+        "admin-jobs": 1158,
+        "legal-jobs": 680,
+        "creative-design-jobs": 101,
+        "graduate-jobs": 437,
+        "retail-jobs": 1465,
         "consultancy-jobs": 394,
-        "manufacturing-jobs": 1025,
-        "scientific-qa-jobs": 291,
+        "manufacturing-jobs": 1016,
+        "scientific-qa-jobs": 280,
         "social-work-jobs": 2736,
-        "travel-jobs": 5868,
+        "travel-jobs": 5873,
         "energy-oil-gas-jobs": 116,
-        "property-jobs": 173,
-        "charity-voluntary-jobs": 44,
-        "domestic-help-cleaning-jobs": 1929,
-        "maintenance-jobs": 467,
-        "part-time-jobs": 1916,
+        "property-jobs": 168,
+        "charity-voluntary-jobs": 43,
+        "domestic-help-cleaning-jobs": 1909,
+        "maintenance-jobs": 459,
+        "part-time-jobs": 1893,
         "other-general-jobs": 19,
         "unknown": 0
       },
       "salary_histogram": {
-        "40000": 4744,
-        "10000": 977,
-        "30000": 8051,
-        "20000": 8783,
-        "60000": 1696,
-        "50000": 2680,
-        "70000": 2365
+        "60000": 1694,
+        "40000": 4704,
+        "20000": 8644,
+        "10000": 968,
+        "30000": 7716,
+        "50000": 2667,
+        "70000": 2373
       },
       "top_companies": [
         {
           "__CLASS__": "Adzuna::API::Response::Company",
-          "canonical_name": "Tesco",
-          "count": 372
+          "count": 253,
+          "canonical_name": "Barchester Healthcare"
         },
         {
-          "__CLASS__": "Adzuna::API::Response::Company",
           "count": 243,
+          "__CLASS__": "Adzuna::API::Response::Company",
           "canonical_name": "AECOM"
         },
         {
-          "canonical_name": "Barchester Healthcare",
-          "count": 238,
+          "canonical_name": "Tesco",
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 238
+        },
+        {
+          "canonical_name": "Stantec",
+          "count": 226,
           "__CLASS__": "Adzuna::API::Response::Company"
         },
         {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "count": 226,
-          "canonical_name": "Stantec"
-        },
-        {
-          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "RAC",
           "count": 180,
-          "canonical_name": "RAC"
+          "__CLASS__": "Adzuna::API::Response::Company"
         }
       ]
     }
