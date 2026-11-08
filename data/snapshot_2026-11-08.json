@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-08",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 10125,
+      "by_category": {
+        "accounting-finance-jobs": 309,
+        "it-jobs": 875,
+        "sales-jobs": 532,
+        "customer-services-jobs": 154,
+        "engineering-jobs": 1763,
+        "hr-jobs": 95,
+        "healthcare-nursing-jobs": 725,
+        "hospitality-catering-jobs": 571,
+        "pr-advertising-marketing-jobs": 74,
+        "logistics-warehouse-jobs": 859,
+        "teaching-jobs": 650,
+        "trade-construction-jobs": 868,
+        "admin-jobs": 277,
+        "legal-jobs": 179,
+        "creative-design-jobs": 31,
+        "graduate-jobs": 178,
+        "retail-jobs": 273,
+        "consultancy-jobs": 241,
+        "manufacturing-jobs": 89,
+        "scientific-qa-jobs": 48,
+        "social-work-jobs": 257,
+        "travel-jobs": 285,
+        "energy-oil-gas-jobs": 20,
+        "property-jobs": 37,
+        "charity-voluntary-jobs": 4,
+        "domestic-help-cleaning-jobs": 466,
+        "maintenance-jobs": 83,
+        "part-time-jobs": 175,
+        "other-general-jobs": 7,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "30000": 1804,
+        "20000": 1549,
+        "70000": 666,
+        "40000": 1028,
+        "10000": 95,
+        "60000": 414,
+        "50000": 686
+      },
+      "top_companies": [
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 179,
+          "canonical_name": "University Hospitals Bristol NHS Foundation Trust"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 143,
+          "canonical_name": "AECOM"
+        },
+        {
+          "count": 108,
+          "canonical_name": "Appen",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 103,
+          "canonical_name": "Stantec",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Rolls-Royce",
+          "count": 92
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 54874,
+      "by_category": {
+        "accounting-finance-jobs": 1156,
+        "it-jobs": 2519,
+        "sales-jobs": 2115,
+        "customer-services-jobs": 780,
+        "engineering-jobs": 6454,
+        "hr-jobs": 346,
+        "healthcare-nursing-jobs": 4007,
+        "hospitality-catering-jobs": 3816,
+        "pr-advertising-marketing-jobs": 257,
+        "logistics-warehouse-jobs": 3363,
+        "teaching-jobs": 3611,
+        "trade-construction-jobs": 5579,
+        "admin-jobs": 1163,
+        "legal-jobs": 707,
+        "creative-design-jobs": 96,
+        "graduate-jobs": 436,
+        "retail-jobs": 1575,
+        "consultancy-jobs": 440,
+        "manufacturing-jobs": 993,
+        "scientific-qa-jobs": 281,
+        "social-work-jobs": 2712,
+        "travel-jobs": 5895,
+        "energy-oil-gas-jobs": 92,
+        "property-jobs": 165,
+        "charity-voluntary-jobs": 44,
+        "domestic-help-cleaning-jobs": 3949,
+        "maintenance-jobs": 389,
+        "part-time-jobs": 1911,
+        "other-general-jobs": 23,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "30000": 10023,
+        "20000": 8516,
+        "10000": 981,
+        "40000": 4762,
+        "60000": 1615,
+        "50000": 2626,
+        "70000": 2409
+      },
+      "top_companies": [
+        {
+          "canonical_name": "Tesco",
+          "count": 335,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM",
+          "count": 236
+        },
+        {
+          "count": 224,
+          "canonical_name": "Amazon Flex",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 222,
+          "canonical_name": "Stantec"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 201,
+          "canonical_name": "University Hospitals Bristol NHS Foundation Trust"
+        }
+      ]
+    }
+  }
+}
