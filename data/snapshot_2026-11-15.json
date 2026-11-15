@@ -1,0 +1,107 @@
+{
+  "date": "2026-11-15",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 9872,
+      "by_category": {
+        "accounting-finance-jobs": 285,
+        "it-jobs": 947,
+        "sales-jobs": 549,
+        "customer-services-jobs": 133,
+        "engineering-jobs": 1771,
+        "hr-jobs": 102,
+        "healthcare-nursing-jobs": 560,
+        "hospitality-catering-jobs": 474,
+        "pr-advertising-marketing-jobs": 69,
+        "logistics-warehouse-jobs": 905,
+        "teaching-jobs": 629,
+        "trade-construction-jobs": 733,
+        "admin-jobs": 222,
+        "legal-jobs": 201,
+        "creative-design-jobs": 26,
+        "graduate-jobs": 175,
+        "retail-jobs": 243,
+        "consultancy-jobs": 234,
+        "manufacturing-jobs": 90,
+        "scientific-qa-jobs": 54,
+        "social-work-jobs": 231,
+        "travel-jobs": 0,
+        "energy-oil-gas-jobs": 0,
+        "property-jobs": 38,
+        "charity-voluntary-jobs": 0,
+        "domestic-help-cleaning-jobs": 0,
+        "maintenance-jobs": 0,
+        "part-time-jobs": 0,
+        "other-general-jobs": 0,
+        "unknown": 0
+      },
+      "salary_histogram": {},
+      "top_companies": []
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": null,
+      "by_category": {
+        "accounting-finance-jobs": 0,
+        "it-jobs": 0,
+        "sales-jobs": 0,
+        "customer-services-jobs": 0,
+        "engineering-jobs": 6368,
+        "hr-jobs": 337,
+        "healthcare-nursing-jobs": 0,
+        "hospitality-catering-jobs": 0,
+        "pr-advertising-marketing-jobs": 0,
+        "logistics-warehouse-jobs": 0,
+        "teaching-jobs": 3554,
+        "trade-construction-jobs": 0,
+        "admin-jobs": 1030,
+        "legal-jobs": 721,
+        "creative-design-jobs": 0,
+        "graduate-jobs": 0,
+        "retail-jobs": 0,
+        "consultancy-jobs": 0,
+        "manufacturing-jobs": 967,
+        "scientific-qa-jobs": 0,
+        "social-work-jobs": 2548,
+        "travel-jobs": 5941,
+        "energy-oil-gas-jobs": 0,
+        "property-jobs": 0,
+        "charity-voluntary-jobs": 0,
+        "domestic-help-cleaning-jobs": 0,
+        "maintenance-jobs": 0,
+        "part-time-jobs": 0,
+        "other-general-jobs": 18,
+        "unknown": 0
+      },
+      "salary_histogram": {},
+      "top_companies": [
+        {
+          "canonical_name": "Tesco",
+          "count": 337,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 262,
+          "canonical_name": "Just Eat"
+        },
+        {
+          "canonical_name": "AECOM",
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 228
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 228,
+          "canonical_name": "Stantec"
+        },
+        {
+          "count": 224,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Amazon Flex"
+        }
+      ]
+    }
+  }
+}
