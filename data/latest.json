@@ -1,142 +1,142 @@
 {
-  "date": "2026-11-18",
+  "date": "2026-11-19",
   "locations": {
     "Bristol": {
       "where": "Bristol",
-      "total_vacancies": 9981,
+      "total_vacancies": 9775,
       "by_category": {
-        "accounting-finance-jobs": 293,
-        "it-jobs": 956,
-        "sales-jobs": 573,
+        "accounting-finance-jobs": 292,
+        "it-jobs": 892,
+        "sales-jobs": 563,
         "customer-services-jobs": 136,
-        "engineering-jobs": 1766,
-        "hr-jobs": 105,
-        "healthcare-nursing-jobs": 562,
-        "hospitality-catering-jobs": 482,
-        "pr-advertising-marketing-jobs": 62,
-        "logistics-warehouse-jobs": 898,
-        "teaching-jobs": 666,
-        "trade-construction-jobs": 742,
-        "admin-jobs": 209,
-        "legal-jobs": 186,
-        "creative-design-jobs": 28,
+        "engineering-jobs": 1716,
+        "hr-jobs": 104,
+        "healthcare-nursing-jobs": 554,
+        "hospitality-catering-jobs": 489,
+        "pr-advertising-marketing-jobs": 61,
+        "logistics-warehouse-jobs": 872,
+        "teaching-jobs": 685,
+        "trade-construction-jobs": 743,
+        "admin-jobs": 216,
+        "legal-jobs": 183,
+        "creative-design-jobs": 29,
         "graduate-jobs": 165,
-        "retail-jobs": 242,
+        "retail-jobs": 239,
         "consultancy-jobs": 226,
-        "manufacturing-jobs": 96,
+        "manufacturing-jobs": 100,
         "scientific-qa-jobs": 58,
-        "social-work-jobs": 234,
-        "travel-jobs": 290,
+        "social-work-jobs": 243,
+        "travel-jobs": 292,
         "energy-oil-gas-jobs": 22,
-        "property-jobs": 44,
+        "property-jobs": 42,
         "charity-voluntary-jobs": 5,
-        "domestic-help-cleaning-jobs": 682,
+        "domestic-help-cleaning-jobs": 594,
         "maintenance-jobs": 75,
-        "part-time-jobs": 173,
+        "part-time-jobs": 174,
         "other-general-jobs": 5,
         "unknown": 0
       },
       "salary_histogram": {
-        "30000": 1941,
-        "50000": 636,
-        "60000": 402,
-        "20000": 1428,
-        "40000": 995,
-        "10000": 98,
-        "70000": 688
+        "10000": 102,
+        "20000": 1430,
+        "60000": 387,
+        "30000": 1850,
+        "50000": 627,
+        "70000": 661,
+        "40000": 1009
       },
       "top_companies": [
         {
           "canonical_name": "AECOM",
           "__CLASS__": "Adzuna::API::Response::Company",
-          "count": 140
+          "count": 144
         },
         {
-          "count": 109,
-          "canonical_name": "Stantec",
-          "__CLASS__": "Adzuna::API::Response::Company"
-        },
-        {
-          "canonical_name": "Appen",
+          "count": 108,
           "__CLASS__": "Adzuna::API::Response::Company",
-          "count": 108
+          "canonical_name": "Appen"
         },
         {
+          "count": 107,
           "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Stantec"
+        },
+        {
           "canonical_name": "Graphcore",
+          "__CLASS__": "Adzuna::API::Response::Company",
           "count": 75
         },
         {
+          "canonical_name": "Capgemini",
           "count": 66,
-          "canonical_name": "Rolls-Royce",
           "__CLASS__": "Adzuna::API::Response::Company"
         }
       ]
     },
     "South West": {
       "where": "South West England",
-      "total_vacancies": 51553,
+      "total_vacancies": 50657,
       "by_category": {
-        "accounting-finance-jobs": 1149,
-        "it-jobs": 2716,
-        "sales-jobs": 2178,
-        "customer-services-jobs": 742,
-        "engineering-jobs": 6273,
-        "hr-jobs": 340,
-        "healthcare-nursing-jobs": 3075,
-        "hospitality-catering-jobs": 2922,
+        "accounting-finance-jobs": 1163,
+        "it-jobs": 2641,
+        "sales-jobs": 2167,
+        "customer-services-jobs": 756,
+        "engineering-jobs": 6228,
+        "hr-jobs": 346,
+        "healthcare-nursing-jobs": 3064,
+        "hospitality-catering-jobs": 2884,
         "pr-advertising-marketing-jobs": 234,
-        "logistics-warehouse-jobs": 3282,
-        "teaching-jobs": 3703,
-        "trade-construction-jobs": 2886,
-        "admin-jobs": 1033,
+        "logistics-warehouse-jobs": 3252,
+        "teaching-jobs": 3744,
+        "trade-construction-jobs": 2929,
+        "admin-jobs": 1037,
         "legal-jobs": 614,
         "creative-design-jobs": 74,
-        "graduate-jobs": 425,
-        "retail-jobs": 1458,
-        "consultancy-jobs": 423,
-        "manufacturing-jobs": 973,
-        "scientific-qa-jobs": 272,
-        "social-work-jobs": 2517,
-        "travel-jobs": 5890,
-        "energy-oil-gas-jobs": 103,
-        "property-jobs": 158,
-        "charity-voluntary-jobs": 32,
-        "domestic-help-cleaning-jobs": 5832,
-        "maintenance-jobs": 333,
-        "part-time-jobs": 1901,
-        "other-general-jobs": 15,
+        "graduate-jobs": 417,
+        "retail-jobs": 1470,
+        "consultancy-jobs": 409,
+        "manufacturing-jobs": 991,
+        "scientific-qa-jobs": 273,
+        "social-work-jobs": 2506,
+        "travel-jobs": 5913,
+        "energy-oil-gas-jobs": 104,
+        "property-jobs": 160,
+        "charity-voluntary-jobs": 36,
+        "domestic-help-cleaning-jobs": 4973,
+        "maintenance-jobs": 336,
+        "part-time-jobs": 1920,
+        "other-general-jobs": 16,
         "unknown": 0
       },
       "salary_histogram": {
-        "40000": 4368,
-        "70000": 2293,
-        "10000": 817,
-        "20000": 7544,
-        "50000": 2499,
-        "30000": 11424,
-        "60000": 1516
+        "30000": 10563,
+        "70000": 2259,
+        "40000": 4430,
+        "50000": 2509,
+        "20000": 7527,
+        "60000": 1508,
+        "10000": 824
       },
       "top_companies": [
         {
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "canonical_name": "Tesco",
-          "count": 297
-        },
-        {
+          "count": 260,
           "canonical_name": "Just Eat",
-          "__CLASS__": "Adzuna::API::Response::Company",
-          "count": 286
+          "__CLASS__": "Adzuna::API::Response::Company"
         },
         {
-          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 247,
           "canonical_name": "AECOM",
-          "count": 233
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "count": 234,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Tesco"
         },
         {
           "__CLASS__": "Adzuna::API::Response::Company",
-          "count": 227,
-          "canonical_name": "Stantec"
+          "canonical_name": "Stantec",
+          "count": 225
         },
         {
           "canonical_name": "Amazon Flex",
