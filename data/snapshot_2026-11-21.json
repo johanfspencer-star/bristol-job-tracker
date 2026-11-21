@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-21",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 9769,
+      "by_category": {
+        "accounting-finance-jobs": 290,
+        "it-jobs": 896,
+        "sales-jobs": 556,
+        "customer-services-jobs": 125,
+        "engineering-jobs": 1757,
+        "hr-jobs": 100,
+        "healthcare-nursing-jobs": 571,
+        "hospitality-catering-jobs": 491,
+        "pr-advertising-marketing-jobs": 67,
+        "logistics-warehouse-jobs": 887,
+        "teaching-jobs": 703,
+        "trade-construction-jobs": 764,
+        "admin-jobs": 224,
+        "legal-jobs": 195,
+        "creative-design-jobs": 29,
+        "graduate-jobs": 168,
+        "retail-jobs": 244,
+        "consultancy-jobs": 235,
+        "manufacturing-jobs": 109,
+        "scientific-qa-jobs": 59,
+        "social-work-jobs": 256,
+        "travel-jobs": 290,
+        "energy-oil-gas-jobs": 23,
+        "property-jobs": 44,
+        "charity-voluntary-jobs": 6,
+        "domestic-help-cleaning-jobs": 424,
+        "maintenance-jobs": 79,
+        "part-time-jobs": 172,
+        "other-general-jobs": 5,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "50000": 635,
+        "40000": 1019,
+        "60000": 404,
+        "20000": 1435,
+        "10000": 105,
+        "30000": 1726,
+        "70000": 662
+      },
+      "top_companies": [
+        {
+          "count": 147,
+          "canonical_name": "AECOM",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Appen",
+          "count": 108
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 106,
+          "canonical_name": "Stantec"
+        },
+        {
+          "count": 74,
+          "canonical_name": "Graphcore",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Capgemini",
+          "count": 68
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 49356,
+      "by_category": {
+        "accounting-finance-jobs": 1165,
+        "it-jobs": 2659,
+        "sales-jobs": 2176,
+        "customer-services-jobs": 740,
+        "engineering-jobs": 6351,
+        "hr-jobs": 345,
+        "healthcare-nursing-jobs": 3205,
+        "hospitality-catering-jobs": 2777,
+        "pr-advertising-marketing-jobs": 235,
+        "logistics-warehouse-jobs": 3315,
+        "teaching-jobs": 3720,
+        "trade-construction-jobs": 2931,
+        "admin-jobs": 1040,
+        "legal-jobs": 628,
+        "creative-design-jobs": 78,
+        "graduate-jobs": 420,
+        "retail-jobs": 1543,
+        "consultancy-jobs": 432,
+        "manufacturing-jobs": 995,
+        "scientific-qa-jobs": 278,
+        "social-work-jobs": 2565,
+        "travel-jobs": 5907,
+        "energy-oil-gas-jobs": 107,
+        "property-jobs": 167,
+        "charity-voluntary-jobs": 36,
+        "domestic-help-cleaning-jobs": 3248,
+        "maintenance-jobs": 347,
+        "part-time-jobs": 1928,
+        "other-general-jobs": 17,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "40000": 4497,
+        "60000": 1531,
+        "70000": 2270,
+        "30000": 9053,
+        "20000": 7536,
+        "10000": 829,
+        "50000": 2522
+      },
+      "top_companies": [
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 331,
+          "canonical_name": "Tesco"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 261,
+          "canonical_name": "Just Eat"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM",
+          "count": 254
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 224,
+          "canonical_name": "Amazon Flex"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 221,
+          "canonical_name": "Stantec"
+        }
+      ]
+    }
+  }
+}
