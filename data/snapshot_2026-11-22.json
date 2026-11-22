@@ -1,0 +1,149 @@
+{
+  "date": "2026-11-22",
+  "locations": {
+    "Bristol": {
+      "where": "Bristol",
+      "total_vacancies": 9784,
+      "by_category": {
+        "accounting-finance-jobs": 298,
+        "it-jobs": 901,
+        "sales-jobs": 558,
+        "customer-services-jobs": 124,
+        "engineering-jobs": 1758,
+        "hr-jobs": 97,
+        "healthcare-nursing-jobs": 578,
+        "hospitality-catering-jobs": 480,
+        "pr-advertising-marketing-jobs": 68,
+        "logistics-warehouse-jobs": 873,
+        "teaching-jobs": 707,
+        "trade-construction-jobs": 768,
+        "admin-jobs": 225,
+        "legal-jobs": 195,
+        "creative-design-jobs": 28,
+        "graduate-jobs": 176,
+        "retail-jobs": 236,
+        "consultancy-jobs": 234,
+        "manufacturing-jobs": 109,
+        "scientific-qa-jobs": 57,
+        "social-work-jobs": 262,
+        "travel-jobs": 288,
+        "energy-oil-gas-jobs": 23,
+        "property-jobs": 43,
+        "charity-voluntary-jobs": 6,
+        "domestic-help-cleaning-jobs": 439,
+        "maintenance-jobs": 80,
+        "part-time-jobs": 169,
+        "other-general-jobs": 4,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "60000": 408,
+        "70000": 674,
+        "30000": 1753,
+        "50000": 641,
+        "10000": 106,
+        "40000": 1029,
+        "20000": 1415
+      },
+      "top_companies": [
+        {
+          "count": 147,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM"
+        },
+        {
+          "count": 108,
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "Appen"
+        },
+        {
+          "canonical_name": "Stantec",
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 106
+        },
+        {
+          "canonical_name": "Graphcore",
+          "count": 74,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "canonical_name": "Amentum",
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 58
+        }
+      ]
+    },
+    "South West": {
+      "where": "South West England",
+      "total_vacancies": 49462,
+      "by_category": {
+        "accounting-finance-jobs": 1179,
+        "it-jobs": 2676,
+        "sales-jobs": 2176,
+        "customer-services-jobs": 730,
+        "engineering-jobs": 6371,
+        "hr-jobs": 340,
+        "healthcare-nursing-jobs": 3240,
+        "hospitality-catering-jobs": 2777,
+        "pr-advertising-marketing-jobs": 233,
+        "logistics-warehouse-jobs": 3215,
+        "teaching-jobs": 3716,
+        "trade-construction-jobs": 2936,
+        "admin-jobs": 1046,
+        "legal-jobs": 631,
+        "creative-design-jobs": 80,
+        "graduate-jobs": 428,
+        "retail-jobs": 1517,
+        "consultancy-jobs": 433,
+        "manufacturing-jobs": 1001,
+        "scientific-qa-jobs": 276,
+        "social-work-jobs": 2608,
+        "travel-jobs": 5901,
+        "energy-oil-gas-jobs": 109,
+        "property-jobs": 168,
+        "charity-voluntary-jobs": 36,
+        "domestic-help-cleaning-jobs": 3353,
+        "maintenance-jobs": 345,
+        "part-time-jobs": 1925,
+        "other-general-jobs": 16,
+        "unknown": 0
+      },
+      "salary_histogram": {
+        "30000": 9192,
+        "70000": 2290,
+        "20000": 7532,
+        "10000": 836,
+        "40000": 4508,
+        "60000": 1540,
+        "50000": 2546
+      },
+      "top_companies": [
+        {
+          "canonical_name": "Tesco",
+          "count": 309,
+          "__CLASS__": "Adzuna::API::Response::Company"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 261,
+          "canonical_name": "Just Eat"
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "canonical_name": "AECOM",
+          "count": 255
+        },
+        {
+          "__CLASS__": "Adzuna::API::Response::Company",
+          "count": 221,
+          "canonical_name": "Stantec"
+        },
+        {
+          "count": 208,
+          "canonical_name": "Hillarys Blinds",
+          "__CLASS__": "Adzuna::API::Response::Company"
+        }
+      ]
+    }
+  }
+}
